@@ -1,0 +1,107 @@
+body {
+  background: #202020;
+  color: white;
+  text-align: center;
+
+}
+#clockBox {
+  width: 40%;
+  margin: auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* border-radius: 10% / 50%; */
+  border-radius: 10px;
+  padding: 2px 0;
+
+}
+#clock,
+#day {
+  font-size: 80px;
+  font-weight: bolder;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: 3px solid white;
+  border-radius: 50px;
+  background: #202020;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+#stopwatch {
+  font-size: 110px;
+  /* position: absolute;
+  top: 65%;
+  left: 50%;  
+  transform: translate(-50%, -55%); */
+  background-color: black;
+  color: white;
+  padding: 0 2%;
+  /* border-radius: 10% / 50%; */
+  border-radius: 10px;
+
+}
+/* #buttons {
+  position: absolute;
+  top: 75%;
+  left: 48.4%;
+  transform: translate(-51.6%, -45%); 
+} */
+#buttons li {
+  display: inline;
+  padding-left: 10px;
+}
+#timerDisplay{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 341px) and (max-device-width: 980px) {
+  #clockBox {
+    width: 100%;
+  }
+  #clock,
+  #day {
+    font-size: 50px;
+  }
+
+  #stopwatch {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  #buttons li {
+    display: flex;
+    margin: 10%;
+  }
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 340px) {
+  #clockBox {
+    width: 100%;
+  }
+  #clock,
+  #day {
+    font-size: 30px;
+  }
+  
+  #stopwatch {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+  #buttons li {
+    display: flex;
+    margin: 10%;
+  }
+}
